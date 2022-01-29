@@ -1,47 +1,59 @@
+<!DOCTYPE html>
 <html>
   <head>
-  <title>Calc Project</title>
-   <link href="one.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="one.css" rel="stylesheet" type="text/css" />
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet" >
   </head>
   <body>
     <h3 id = "h3"></h3>
-    <input id = "input" type = text placeholder = "0" style = text-align:right;font-family:"roboto condensed" readonly/>
-    <p id = "input1"></p>
-    <p id = "input2"></p>
-    <p id = "input3"></p>
+      <input id = "input" type = text placeholder = "Suraj Calculator" style = text-align:right;font-family:"Roboto" readonly/><br>
+      <div id = "d"><span onclick = "back()" id = "back" class="material-icons">
+backspace
+</span></div>
+    <p id = input1><p>
+      <p id = input2></p>
+      <p id = input3></p>
     <table>
       <tr>
-        <td><button id = buttonone onClick = "button()">7</button></td>
-        <td><button id = buttontwo onClick = "buttontwo()">8</button></td>
-        <td><button id = buttonthree onClick = "buttonthree()">9</button></td>
-        <td><button id = buttonfour onClick = "buttonfour()">÷</button></td>
-      </tr>
-      <tr>
-        <td><button id = buttonfive onClick = "buttonfive()">4</button></td>
-        <td><button id = buttonsix onClick = "buttonsix()">5</button></td>
-        <td><button id = buttonseven onClick = "buttonseven()">6</button></td>
-        <td><button id = button8 onClick = "button8()">x</button></td>
-      </tr>
-      <tr>
-        <td><button id = buttonnine onClick = "buttonnine()">1</button></td>
-        <td><button id = buttonten onClick = "buttonten()">2</button></td>
-        <td><button id = button11 onClick = "button11()">3</button></td>
-        <td><button id = buttontwelve onClick = "buttontwelve()">+</button></td>
-      </tr>
-      <tr>
-        <td><button id = button13 onClick = "button13()">0</button></td>
-        <td><button id = button14 onClick = "button14()">.</button></td>
-        <td><button id = minus onClick = "minus()">-</button></td>
-        <td><button id = button15 onClick = "button15()">=</button></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td><button id = button16 onClick = "button16()">Clear</button></td>
-      </tr>
-    </table>
-    
-    <script src = "one.js"
+        <td><button id = buttonone onClick = "button()">7</button</td>
+          <td><button id = buttontwo onClick = "buttontwo()">8</button</td>
+            <td><button id = buttonthree onClick = "buttonthree()">9</button</td>
+              <td><button id = buttonfour onClick = "buttonfour()">÷</button</td>
+                </tr>
+                <tr>
+                  <td><button id = buttonfive onClick = "buttonfive()">4</button</td>
+                  <td><button id = buttonsix onClick = "buttonsix()">5</button</td>
+                  <td><button id = buttonseven onClick = "buttonseven()">6</button</td>
+                  <td><button id = button8 onClick = "button8()">×</button</td>
+                  </tr>
+                  <tr>
+                    <td><button id = buttonnine onClick = "buttonnine()">1</button</td>
+                    <td><button id = buttonten
+                    onClick = "buttonten()">2</button</td>
+                    <td><button id = button11
+                    onClick = "button11()">3</button</td>
+                    <td><button id = buttontwelve
+                    onClick = "buttontwelve()">+</button</td>
+                    </tr>
+                    <tr>
+                    <td><button id = button13
+                    onClick = "button13()">0</button</td>
+                    <td><button id = button14
+                    onClick = "button14()">.</button</td>
+                    <td><button id = "minus" onClick = "minus()">-</button></td>
+                    <td><button class = "animation" id = buttonequal
+                    onClick = "button15()"><span class = span>=</span></button</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td><button id = button16
+                    onClick = "button16()">Clear</button</td>
+
+    <script src="one.js"></script>
   </body>
 </html>
