@@ -1,0 +1,51 @@
+button
+{
+  border-radius:500px;
+  width:23vw;
+  outline:none;
+  background:#E8E8E8;
+  border-width:0px;
+  padding:30px;
+  font-size:150%;
+  transition-duration:0.2s;
+}
+button:hover
+{
+  transform:scale(0.89);
+}
+#input
+{
+  width:100vw;
+  height:86px;
+  border-radius:23px;
+  outline:none;
+  border-width:0px;
+  background:#D3D3D3;
+  font-size:50px;
+  font-family:roboto condensed;
+  color:#606060;
+}
+#button16
+{
+  margin-top:20px;
+  width:34vw;
+  margin-left:-50px;
+}
+#buttonfour,#button8,#buttontwelve,#button14,#minus
+{
+  background:#ff6f61;
+}
+#button15
+{
+  background:#ff8861;
+  font-size:600%;
+  padding:0px;
+  color:white;
+}
+input[type=text]{
+  font-family:roboto condensed;
+}
+#buttonnine
+{
+  background:red;
+}
