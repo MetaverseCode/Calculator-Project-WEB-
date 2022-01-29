@@ -3,15 +3,15 @@ button
   border-radius:500px;
   width:23vw;
   outline:none;
-  background:#E8E8E8;
+  background:#E8E8E8;;
   border-width:0px;
   padding:30px;
   font-size:150%;
   transition-duration:0.2s;
 }
-button:hover
+button:active
 {
-  transform:scale(0.89);
+  transform: scale(0.89);
 }
 #input
 {
@@ -22,7 +22,7 @@ button:hover
   border-width:0px;
   background:#D3D3D3;
   font-size:50px;
-  font-family:roboto condensed;
+  font-family:;
   color:#606060;
 }
 #button16
@@ -30,22 +30,64 @@ button:hover
   margin-top:20px;
   width:34vw;
   margin-left:-50px;
+  background:#ff6161;
 }
 #buttonfour,#button8,#buttontwelve,#button14,#minus
 {
   background:#ff6f61;
 }
-#button15
+#buttonequal
 {
-  background:#ff8861;
+  background: #ff8861;
   font-size:600%;
   padding:0px;
   color:white;
 }
 input[type=text]{
-  font-family:roboto condensed;
+  font-family:;
 }
 #buttonnine
 {
-  background:red;
+  background: red;
+}
+.animation{
+  animation : suraj 0.5s linear 10 alternate;
+  position:linear;
+}
+@keyframes suraj{
+  0%  { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg);}
+}
+#input:focus{
+  animation:suraj 0.5s linear 3 alternate;
+  position:linear;
+}
+bofdy{
+  background-image:url("https://images.unsplash.com/photo-1432847712612-926caafaa802?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmlnaHQlMjBibHVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  background-size:1199px;
+  background-repeat: no-repeat;
+  height:100%;
+  width:100%;
+  background-size: cover
+}
+#back{
+  color:grey;
+  top:20px;
+  position:relative;
+  left:300px;
+  margin-bottom:30px;
+  transform:scale(1.6);
+  transition:0.27s;
+}
+#back:active{
+  transform:scale(0.99);
 }
