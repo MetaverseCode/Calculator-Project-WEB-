@@ -1,10 +1,11 @@
+
 function button16(){
-  document.getElementById("input").value = "";
+document.getElementById("input").value = "";
   document.getElementById("h3").innerHTML = "";
 }
 function button(){
-  document.getElementById("input").value += "7";
-  document.getElementById("h3").innerHTML+= "7";
+document.getElementById("input").value += "7";
+document.getElementById("h3").innerHTML += "7";
 }
 function buttontwo(){
   document.getElementById("input").value += "8";
@@ -31,7 +32,7 @@ function buttonseven(){
   document.getElementById("h3").innerHTML += "6";
 }
 function button8(){
-  document.getElementById("input").value += "x";
+  document.getElementById("input").value += "X";
   document.getElementById("h3").innerHTML += "*";
 }
 function buttonnine(){
@@ -62,16 +63,60 @@ function minus(){
   document.getElementById("input").value += "-";
   document.getElementById("h3").innerHTML += "-";
 }
-function solve1(){
+
+function suraj(){
   var four = document.getElementById("buttonfour").value;
   var five = document.getElementById("button8").value;
   var six = document.getElementById("buttontwelve").value;
 }
 function button15(){
-  
-  
-  var x = document.getElementById("h3").innerHTML;
-  var y = eval(x);
+var x = document.getElementById("h3").innerHTML;
+
+var y = eval(x);
+
+if (x == "0/0"){
+  document.getElementById("input").value = "This Can't Be Happen";
+}
+else if (x == "3/0"){
+  document.getElementById("input").value = "This Can't Be Happen"
+}
+else if (x == "4/0"){
+  document.getElementById("input").value = "This Can't Be Happen"
+}
+else if (x == "5/0"){
+  document.getElementById("input").value = "This Can't Be Happen"
+}
+else if (x == "6/0"){
+  document.getElementById("input").value = "This Can't Be Happen"
+}
+else if (x == "7/0"){
+  document.getElementById("input").value = "This Can't Be Happen"
+}
+else if (x == "8/0"){
+  document.getElementById("input").value = "This Can't Be Happen"
+}
+else if (x == "9/0"){
+  document.getElementById("input").value = "This Can't Be Happen"
+}
+else if (x == "2/0"){
+  document.getElementById("input").value = "This Can't Be Happen"
+}
+else if (x == "1/0"){
+  document.getElementById("input").value = "This Can't Be Happen";
+}
+else if (x == "1+"){
+  document.getElementById("input").value = "OnePlus 5G"
+}
+else {
   document.getElementById("input").value = y;
 }
+}
 document.getElementById("h3").style.display = "none";
+function back(){
+var a = document.getElementById("input").value;
+var b = a.substr(0,a.length-1);
+document.getElementById("input").value = b;
+var x = document.getElementById("h3").innerHTML;
+var c = x.substr(0,x.length-1);
+document.getElementById("h3").innerHTML = c;
+}
